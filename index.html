@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Todo List</title>
+</head>
+<body>
+    <section class="home">
+           <p>What would you like to do today?</p>
+           <div class="container">
+            <div class="input-group">
+                <input class="input-style" id="userworksInp" type="text" placeholder="Write what you want to do" name="userworks" required>
+                <button class="addBtn" id="addBtn">Add</button>
+            </div>
+        </div>
+        
+    </section>
+
+    <div id="tabelcontainer">
+        <table>
+            <caption>My daily work</caption>
+            <thead>
+                <tr>
+                    <th>Task Title</th>
+                    <th>Date Created</th>
+                    <th>Remove</th>
+                    <th>Edit</th>
+                    <th>Done</th>
+                </tr>
+            </thead>
+            <tbody id="mylist">
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Clear All Button -->
+    <div class="clear">
+        <button style="background-color: rgb(67, 2, 66); color: wheat; padding: 10px; border-radius: 5px;" id="clearAllBtn">Clear All</button>
+    </div>
+
+    <section>
+        <div class="see">
+            <div>
+                <select id="taskFilter">
+                    <option value="all">All Tasks</option>
+                    <option value="completed">Completed Tasks</option>
+                    <option value="incomplete">Incomplete Tasks</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="see2">
+            <div>
+                <input type="text" id="searchBox" placeholder="Search tasks...">
+            </div>
+            
+            <ul id="suggestions" style="display: none;"></ul>
+            
+            <div id="searchResults">
+                <table id="searchResultsTable" style="display: none;">
+                    <caption>Search Results</caption>
+                    <thead>
+                        <tr>
+                            <th>Task Title</th>
+                            <th>Date Created</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>  
+    </section>
+
+    <section id="layer">
+        <div class="layercontainer">
+            <h1>Edit Task Title</h1>
+            <div class="input-group">
+                <input class="input-style" id="edituserworksInp" type="text" placeholder="Write what you want to do" name="edituserworks" required>
+            </div>
+            <div class="cancel">
+                <button id="CancelBtn">Cancel</button>
+            </div>
+            <div class="cancel">
+                <button id="ChangeBtn">Change</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

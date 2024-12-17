@@ -1,0 +1,251 @@
+/* Global Reset */
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, #add8e6, #e18edd, #8a0483); 
+    min-height: 100vh; 
+}
+
+.container {
+    text-align: center; 
+    margin-bottom: 20px;
+}
+
+.home {
+    padding: 25px 50px; 
+}
+
+p {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #000000;
+    padding: 12px 0 25px;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden; 
+    margin-left: 420px;
+    animation: typing 4s steps(30) infinite, resetText 6s infinite;
+}
+.input-group {
+    margin-bottom: 15px;
+    width: 500px;
+    margin: auto;
+    display: flex; 
+    align-items: center;
+    gap: 10px; 
+}
+
+.addBtn {
+    height: 44px; 
+    border-radius: 8px;
+    background-color: #530549;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 0 20px;
+}
+
+.addBtn:hover {
+    background-color: #3447bf;
+}
+
+.filtertask {
+    margin-right: 10px; 
+}
+
+.searchbox {
+    margin-right: 10px; 
+}
+
+#taskFilter, #searchBox {
+    margin-left: 10px; 
+    padding-left: 15px; 
+}
+
+
+.input-group .input-style {
+    width: 100%;
+    border-radius: 8px;
+    height: 44px;
+    border: 1px solid #B9BECE;
+    font-size: 14px;
+    padding: 4px 16px;
+    outline: none;
+}
+
+.input-group .input-style:focus {
+    border-color: #237eee;
+}
+
+.common-btn {
+    margin: auto;
+    text-align: right;
+    margin-right: 230px;
+}
+
+.clear{
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    margin-left: 900px;
+}
+
+.see{
+    margin-left: 80px;
+}
+.see2{
+    margin-left: 80px;
+}
+.common-btn button {
+    width: 10%;
+    height: 44px;
+    border-radius: 8px;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.common-btn button:hover {
+    background-color: #0a21b2;
+}
+
+#tabelcontainer {
+    width: 80%;
+    margin: 20px auto;
+    max-width: 700px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 10px;
+}
+
+tr:nth-child(even) {
+    background-color: #b0bcfc;
+}
+
+table th {
+    background-color: black;
+    color: white;
+}
+
+#taskFilter, #searchBox {
+    width: 500px;
+    margin: 20px auto;
+    padding: 10px;
+    margin-left: 200px;
+}
+
+#layer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+.layercontainer {
+    width: 500px; 
+    margin: 100px auto;
+    background-color: #b0bcfc;
+    padding: 20px;
+    border-radius: 15px;
+}
+.cancel{
+    padding: 15px;
+}
+
+
+@media (max-width: 768px) {
+    p{
+       margin: auto;
+       margin-left: 50px;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    .home {
+        padding: 20px;
+    }
+
+    .input-group,
+    .common-btn,
+    #tabelcontainer,
+    #taskFilter,
+    #searchBox {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    td, th {
+        padding: 8px;
+    }
+
+    .layercontainer {
+        width: 100%;
+        padding: 20px;
+    }
+}
+
+/* Add the Clear All button style */
+.common-btn button#clearAllBtn {
+    width: 10%;
+    height: 44px;
+    border-radius: 8px;
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.common-btn button#clearAllBtn:hover {
+    background-color: #c0392b;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .see, .see2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .see select, .see2 input {
+        width: 80%;
+    }
+
+    #taskFilter, #searchBox {
+        margin: auto;
+        padding: 10px;
+        width: 100%;
+        margin-left: 10px;
+    }
+   
+}
