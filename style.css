@@ -167,8 +167,8 @@ table th {
     width: 500px; 
     margin: 100px auto;
     background-color: #b0bcfc;
-    padding: 20px;
-    border-radius: 15px;
+    padding: 10px;
+    border-radius: 5px;
 }
 .cancel{
     padding: 15px;
